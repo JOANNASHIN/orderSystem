@@ -1,0 +1,86 @@
+.os {
+  overflow: hidden;
+  width: 100%;
+  background: $bg;
+
+  &__app {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__layout {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: rem(14px 16px);
+    background: $point;
+    text-align: center;
+  }
+
+  &__back {
+    position: absolute;
+    top: 50%;
+    left: rem(16px);
+    @include fontcss($white, 600, rem(20px));
+    transform: translate(0, -50%);
+
+    span {
+      display: none;
+    }
+  }
+
+  &__title {
+    @include fontcss($white, 600, rem(16px));
+  }
+
+  &__logo {
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(30px);
+    font-size: 0;
+
+    svg {
+      color: $white;
+      font-size: rem(16px);
+    }
+
+    span {
+      margin-left: rem(8px);
+      @include fontcss($white, 600, rem(16px));
+    }
+  }
+
+  &__contents {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__page-layout {
+    overflow-y: auto;
+    height: 100%;
+    padding: rem(24px 16px 70px);
+
+    &__header {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: rem(24px);
+    }
+
+    &__title {
+      @include fontcss($black, bold, rem(20px), rem(24px));
+    }
+  }
+}

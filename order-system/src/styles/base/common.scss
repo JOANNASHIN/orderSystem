@@ -1,0 +1,128 @@
+.os {
+  //IR 기법
+  .blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  .sizeS {
+    font-size: rem(10px) !important;
+
+    em {
+      font-size: rem(10px) !important;
+    }
+  }
+
+  .sizeXS {
+    font-size: rem(9px) !important;
+
+    em {
+      font-size: rem(9px) !important;
+    }
+  }
+
+  /* #region color */
+  .income {
+    color: $blue !important;
+  }
+
+  .spending {
+    color: $red !important;
+  }
+
+  .sizeM {
+    font-size: rem(12px) !important;
+
+    em {
+      font-size: rem(12px) !important;
+    }
+  }
+
+  .white {
+    background: $white !important;
+  }
+
+  .black {
+    background: $black !important;
+  }
+
+  .point {
+    background: $point !important;
+  }
+
+  .red {
+    background: $red !important;
+  }
+
+  .blue {
+    background: $blue !important;
+  }
+
+  .yellow {
+    background: $yellow !important;
+  }
+
+  .green {
+    background: $green !important;
+  }
+
+  .lightblue {
+    background: $lightblue !important;
+  }
+
+  .mint {
+    background: $mint !important;
+  }
+
+  .brightmint {
+    background: $brightmint !important;
+  }
+
+  .pink {
+    background: $pink !important;
+  }
+
+  .purple {
+    background: $purple !important;
+  }
+
+  .orange {
+    background: $orange !important;
+  }
+
+  .peach {
+    background: $peach !important;
+  }
+
+  .greyccc {
+    background: $greyccc !important;
+  }
+
+  /* #endregion */
+
+  //국문 폰트
+  &__noto {
+    font-family: $noto;
+  }
+
+  //숫자 폰트
+  &__number {
+    font-family: $font_n;
+  }
+
+  //영문 폰트
+  &__english {
+    font-family: $font_e;
+  }
+
+  //flex 기본
+  &__flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

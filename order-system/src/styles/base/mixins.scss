@@ -1,0 +1,70 @@
+@mixin clear() {
+  &:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+}
+
+//말줄임 후략
+@mixin line($lineCount: 1) {
+  @if ($lineCount == 1) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } @else if($lineCount == 'auto') {
+    display: block;
+    overflow: visible;
+  } @else {
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+
+    /* autoprefixer: on */
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: $lineCount;
+  }
+}
+
+//font guide
+$lineheights: (
+  1.1rem: rem(18px),
+  1.2rem: rem(18px),
+  1.3rem: rem(19px),
+  1.4rem: rem(22px),
+  1.5rem: rem(24px),
+  1.6rem: rem(24px),
+  1.8rem: rem(27px),
+  2rem: rem(30px),
+  2.8rem: rem(42px),
+);
+
+@mixin fontcss(
+  $color: $black,
+  $weight: 200,
+  $size: rem(13px),
+  $lineheight: none
+) {
+  @if ($color) {
+    color: $color;
+  }
+  @if ($weight) {
+    font-weight: $weight;
+  }
+  @if ($size) {
+    font-size: $size;
+  }
+  @if ($lineheight != 'none') {
+    line-height: $lineheight;
+  } @else {
+    line-height: map-get($lineheights, $size);
+  }
+}
+
+//image url
+@function src($folder: 'common', $filename: '') {
+  @return '../../assets/images/#{$folder}/#{$filename}';
+}

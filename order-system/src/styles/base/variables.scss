@@ -1,0 +1,76 @@
+:root {
+  //basic
+  --white: #fff;
+  --black: #111;
+
+  //primary
+  --background: #f0f0f0;
+  --point: #acb0ee;
+
+  //support
+  --red: #f9173f;
+  --blue: #0679c0;
+  --yellow: #f5cd41;
+  --green: #91ce81;
+  --mint: #c3e2dd;
+  --lightblue: #6eceda;
+  --pink: #f07bbb;
+  --purple: #8c7bd3;
+  --orange: #f99769;
+  --peach: #ff7171;
+  --brightmint: #1ebfa4;
+
+  //neutrals
+  --white: #fff;
+  --grey50: #f8f8f8;
+  --grey80: #f2f2f2;
+  --grey100: #e8e8e8;
+  --grey200: #ddd;
+  --grey400: #ccc;
+  --grey500: #aaa;
+  --grey600: #888;
+  --grey800: #666;
+
+  //fonts
+  --noto: 'Notosans', sans-serif; //국문
+  --font_n: 'Montserrat', var(--noto); //숫자
+  --font_e: 'Montserrat', var(--noto); //영문
+}
+
+/* #region Colors */
+//basic
+$white: var(--white);
+$black: var(--black);
+
+//primary
+$bg: var(--background);
+$point: var(--point);
+
+//support
+$red: var(--red);
+$blue: var(--blue);
+$yellow: var(--yellow);
+$green: var(--green);
+$lightblue: var(--lightblue);
+$mint: var(--mint);
+$pink: var(--pink);
+$purple: var(--purple);
+$orange: var(--orange);
+$peach: var(--peach);
+$brightmint: var(--brightmint);
+
+//neutrals
+$greyf8: var(--grey50);
+$greyf2: var(--grey80);
+$greye8: var(--grey100);
+$greyddd: var(--grey200);
+$greyccc: var(--grey400);
+$greyaaa: var(--grey500);
+$grey888: var(--grey600);
+$grey666: var(--grey800);
+
+/* #region Fonts */
+$noto: var(--noto);
+$font_n: var(--font_n);
+$font_e: var(--font_e);
+/* #endregion */
